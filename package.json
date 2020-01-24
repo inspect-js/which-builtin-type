@@ -3,6 +3,17 @@
 	"version": "0.0.0",
 	"description": "What is the type of this builtin JS value?",
 	"main": "index.js",
+	"exports": {
+		".": [
+			{
+				"require": "./index.js",
+				"default": "./index.js"
+			},
+			"./index.js"
+		],
+		"./package.json": "./package.json"
+	},
+	"type": "commonjs",
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
@@ -56,5 +67,16 @@
 		"unreleased": false,
 		"commitLimit": false,
 		"backfillLimit": false
+	},
+	"dependencies": {
+		"function.prototype.name": "^1.1.2",
+		"is-async-fn": "^1.1.0",
+		"is-date-object": "^1.0.2",
+		"is-generator-function": "^1.0.7",
+		"is-regex": "^1.0.5",
+		"isarray": "^2.0.5",
+		"which-boxed-primitive": "^1.0.1",
+		"which-collection": "^1.0.0",
+		"which-typed-array": "^1.1.1"
 	}
 }
