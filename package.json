@@ -1,0 +1,27 @@
+{
+	"name": "which-builtin-type",
+	"version": "0.0.0",
+	"description": "What is the type of this builtin JS value?",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/es-shims/which-builtin-type.git"
+	},
+	"keywords": [
+		"type",
+		"builtin",
+		"ecmascript"
+	],
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/es-shims/which-builtin-type/issues"
+	},
+	"homepage": "https://github.com/es-shims/which-builtin-type#readme",
+	"engines": {
+		"node": ">= 0.4"
+	}
+}
