@@ -16,6 +16,7 @@
 	"type": "commonjs",
 	"scripts": {
 		"prepublish": "safe-publish-latest",
+		"prelint": "evalmd README.md",
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"tests-only": "tape 'test/**'",
@@ -52,6 +53,7 @@
 		"available-typed-arrays": "^1.0.1",
 		"covert": "^1.1.1",
 		"eslint": "^6.8.0",
+		"evalmd": "^0.0.19",
 		"for-each": "^0.3.3",
 		"has-bigints": "^1.0.0",
 		"has-symbols": "^1.0.1",
