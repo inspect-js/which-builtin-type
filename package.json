@@ -4,6 +4,8 @@
 	"description": "What is the type of this builtin JS value?",
 	"main": "index.js",
 	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
@@ -30,7 +32,9 @@
 		"node": ">= 0.4"
 	},
 	"devDependencies": {
-		"auto-changelog": "^1.16.2"
+		"@ljharb/eslint-config": "^15.1.0",
+		"auto-changelog": "^1.16.2",
+		"eslint": "^6.8.0"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
