@@ -5,7 +5,7 @@ var inspect = require('object-inspect');
 var assign = require('object.assign');
 var forEach = require('for-each');
 var arrows = require('make-arrow-function').list();
-var generator = require('make-generator-function');
+var generators = require('make-generator-function')();
 var asyncs = require('make-async-function').list();
 var hasSymbols = require('has-symbols')();
 var hasBigInts = require('has-bigints')();
@@ -66,10 +66,7 @@ test('non-nullish', function (t) {
 			function f() {},
 			assign(function constructor() {}, { constructor: Object })
 		].concat(arrows),
-		GeneratorFunction: [].concat(
-			generator || [],
-			(generator && generator.concise) || []
-		),
+		GeneratorFunction: generators,
 		AsyncFunction: asyncs,
 		Object: [
 			{},
