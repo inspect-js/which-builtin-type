@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.1](https://github.com/inspect-js/which-builtin-type/compare/v1.0.0...v1.0.1) - 2020-12-14
+
+### Commits
+
+- [Tests] migrate tests to Github Actions [`165a1b5`](https://github.com/inspect-js/which-builtin-type/commit/165a1b5924c242db86749e9691bb310fce3e2b05)
+- [meta] do not publish github action workflow files [`851f508`](https://github.com/inspect-js/which-builtin-type/commit/851f508ad644248621ca2d465ba440913e865d4e)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `has-bigints`, `object-inspect`, `object.assign`, `tape` [`5b0906c`](https://github.com/inspect-js/which-builtin-type/commit/5b0906cf115aa7b77073262a3fb34134c214c444)
+- [Tests] run `nyc` on all tests; use `tape` runner [`85924cd`](https://github.com/inspect-js/which-builtin-type/commit/85924cd70d665f79fd8f1a439706412d7e8e6455)
+- [readme] fix repo URLs, remove defunct badges [`8fb4bb5`](https://github.com/inspect-js/which-builtin-type/commit/8fb4bb51219e956916583ba9a34a9a2d0228716e)
+- [Dev Deps] update `@ljharb/eslint-config`, `available-typed-arrays`, `make-arrow-function`, `make-generator-function` [`9d65291`](https://github.com/inspect-js/which-builtin-type/commit/9d652910fc84589669f9bfe7accc0272df911a0f)
+- [Deps] update `function.prototype.name`, `is-generator-function`, `is-regex`, `which-boxed-primitive`, `which-collection`, `which-typed-array` [`7900c10`](https://github.com/inspect-js/which-builtin-type/commit/7900c10e8113fb9b087103f313bda71f4204a935)
+- [actions] add "Allow Edits" workflow [`f9f04f5`](https://github.com/inspect-js/which-builtin-type/commit/f9f04f5999f564b921b9678792a3db8ad4268709)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`4452dee`](https://github.com/inspect-js/which-builtin-type/commit/4452dee4fe2bc3cdb29470f25a184031b1c267ee)
+
 ## v1.0.0 - 2020-01-24
 
 ### Commits
