@@ -1,6 +1,5 @@
 # which-builtin-type <sup>[![Version Badge][2]][1]</sup>
 
-[![Build Status][3]][4]
 [![dependency status][5]][6]
 [![dev dependency status][7]][8]
 [![License][license-image]][license-url]
@@ -52,15 +51,13 @@ assert.equal('BigUint64Array', whichBuiltinType(new BigUint64Array()));
 Simply clone the repo, `npm install`, and run `npm test`
 
 [1]: https://npmjs.org/package/which-builtin-type
-[2]: http://versionbadg.es/inspect-js/which-builtin-type.svg
-[3]: https://travis-ci.org/inspect-js/which-builtin-type.svg
-[4]: https://travis-ci.org/inspect-js/which-builtin-type
+[2]: https://versionbadg.es/inspect-js/which-builtin-type.svg
 [5]: https://david-dm.org/inspect-js/which-builtin-type.svg
 [6]: https://david-dm.org/inspect-js/which-builtin-type
 [7]: https://david-dm.org/inspect-js/which-builtin-type/dev-status.svg
 [8]: https://david-dm.org/inspect-js/which-builtin-type#info=devDependencies
 [11]: https://nodei.co/npm/which-builtin-type.png?downloads=true&stars=true
-[license-image]: http://img.shields.io/npm/l/which-builtin-type.svg
+[license-image]: https://img.shields.io/npm/l/which-builtin-type.svg
 [license-url]: LICENSE
-[downloads-image]: http://img.shields.io/npm/dm/which-builtin-type.svg
-[downloads-url]: http://npm-stat.com/charts.html?package=which-builtin-type
+[downloads-image]: https://img.shields.io/npm/dm/which-builtin-type.svg
+[downloads-url]: https://npm-stat.com/charts.html?package=which-builtin-type

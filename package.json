@@ -27,7 +27,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/es-shims/which-builtin-type.git"
+		"url": "git+https://github.com/inspect-js/which-builtin-type.git"
 	},
 	"keywords": [
 		"type",
@@ -40,9 +40,9 @@
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/es-shims/which-builtin-type/issues"
+		"url": "https://github.com/inspect-js/which-builtin-type/issues"
 	},
-	"homepage": "https://github.com/es-shims/which-builtin-type#readme",
+	"homepage": "https://github.com/inspect-js/which-builtin-type#readme",
 	"engines": {
 		"node": ">= 0.4"
 	},
