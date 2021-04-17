@@ -70,6 +70,7 @@ test('non-nullish', function (t) {
 		AsyncFunction: asyncs,
 		Object: [
 			{},
+			{ constructor: null },
 			Math
 		],
 		Symbol: hasSymbols ? [
