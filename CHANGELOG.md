@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.0](https://github.com/inspect-js/which-builtin-type/compare/v1.0.1...v1.1.0) - 2021-04-18
+
+### Commits
+
+- [Fix] prevent constructor or Symbol.toStringTag from lying about builtins [`7638412`](https://github.com/inspect-js/which-builtin-type/commit/7638412d9b6cca9af3999b4bf45d3a630f84409e)
+- [actions] use `node/install` instead of `node/run`; use `codecov` action [`6a06770`](https://github.com/inspect-js/which-builtin-type/commit/6a06770548aec6948ab0aaa28babc0423f0fe745)
+- [New] recognize Promise [`0d79e3a`](https://github.com/inspect-js/which-builtin-type/commit/0d79e3a0916438e1c808f83d8928af29914de08a)
+- [New] recognize WeakRef and FinalizationRegistry [`020de6a`](https://github.com/inspect-js/which-builtin-type/commit/020de6a84242e12a5cd956b74f4457a8d3cba6fb)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `has-symbols`, `object-inspect`, `tape` [`71e47f5`](https://github.com/inspect-js/which-builtin-type/commit/71e47f50c534e2e37ba654bdc2851f9fb8b9f435)
+- [Deps] update `function.prototype.name`, `is-regex` [`f2d56b9`](https://github.com/inspect-js/which-builtin-type/commit/f2d56b9ba12962f6432d869e14a73c43b0bfaeb0)
+- [meta] use `prepublishOnly` script for npm 7+ [`daae0a0`](https://github.com/inspect-js/which-builtin-type/commit/daae0a018594cef507a0d5bc3304ec950db15925)
+- [Tests] increase coverage [`bd406f2`](https://github.com/inspect-js/which-builtin-type/commit/bd406f212ac79af48c0ca11fb36c770fe106bf5f)
+
 ## [v1.0.1](https://github.com/inspect-js/which-builtin-type/compare/v1.0.0...v1.0.1) - 2020-12-14
 
 ### Commits

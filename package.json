@@ -1,6 +1,6 @@
 {
 	"name": "which-builtin-type",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"description": "What is the type of this builtin JS value?",
 	"main": "index.js",
 	"exports": {
