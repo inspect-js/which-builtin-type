@@ -135,7 +135,6 @@ test('non-nullish', function (t) {
 			if (
 				expected !== 'Object' // the fallback can't fall back
 				&& expected !== 'Foo' // not a builtin
-				&& expected !== 'Promise' // TODO
 			) {
 				if (hasToStringTag) {
 					var fakerTag = {};

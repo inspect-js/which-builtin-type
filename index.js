@@ -16,7 +16,19 @@ var toStringTag = hasSymbols && Symbol.toStringTag;
 
 var $Object = Object;
 
-var isKnownBuiltin = function isKnownBuiltinName(builtinName) {
+var promiseThen = typeof Promise === 'function' && Promise.prototype.then;
+var isPromise = function isPromise(value) {
+	if (!value || typeof value !== 'object' || !promiseThen) {
+		return false;
+	}
+	try {
+		promiseThen.call(value, null, function () {});
+		return true;
+	} catch (e) {}
+	return false;
+};
+
+var isKnownBuiltin = function isKnownBuiltin(builtinName) {
 	return builtinName
 		// primitives
 		&& builtinName !== 'BigInt'
@@ -48,11 +60,11 @@ var isKnownBuiltin = function isKnownBuiltinName(builtinName) {
 		&& builtinName !== 'Uint32Array'
 		&& builtinName !== 'Uint8Array'
 		&& builtinName !== 'Uint8ClampedArray'
-
 		// checked explicitly
 		&& builtinName !== 'Array'
 		&& builtinName !== 'Date'
 		&& builtinName !== 'FinalizationRegistry'
+		&& builtinName !== 'Promise'
 		&& builtinName !== 'RegExp'
 		&& builtinName !== 'WeakRef'
 		// functions
@@ -93,6 +105,9 @@ module.exports = function whichBuiltinType(value) {
 			return 'AsyncFunction';
 		}
 		return 'Function';
+	}
+	if (isPromise(value)) {
+		return 'Promise';
 	}
 	if (toStringTag && toStringTag in value) {
 		var tag = value[toStringTag];
