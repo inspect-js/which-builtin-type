@@ -8,6 +8,7 @@ var arrows = require('make-arrow-function').list();
 var generators = require('make-generator-function')();
 var asyncs = require('make-async-function').list();
 var hasSymbols = require('has-symbols')();
+var hasToStringTag = hasSymbols && typeof Symbol.toStringTag === 'symbol';
 var hasBigInts = require('has-bigints')();
 var availableTypedArrays = require('available-typed-arrays');
 
@@ -104,6 +105,14 @@ test('non-nullish', function (t) {
 			new WeakSet(),
 			assign(new WeakSet(), { constructor: Object })
 		] : [],
+		WeakRef: typeof WeakRef === 'function' ? [
+			new WeakRef({}),
+			assign(new WeakRef({}), { constructor: Object })
+		] : [],
+		FinalizationRegistry: typeof FinalizationRegistry === 'function' ? [
+			new FinalizationRegistry(function () {}),
+			assign(new FinalizationRegistry(function () {}), { constructor: Object })
+		] : [],
 		Promise: typeof Promise === 'function' ? [
 			Promise.resolve(42),
 			Promise.reject(NaN),
@@ -122,6 +131,40 @@ test('non-nullish', function (t) {
 			var obj = Object(value);
 			if (value !== obj) {
 				t.equal(which(obj), expected, inspect(obj) + ' is ' + inspect(expected));
+			}
+			if (
+				expected !== 'Object' // the fallback can't fall back
+				&& expected !== 'Foo' // not a builtin
+				&& expected !== 'Promise' // TODO
+				&& expected !== 'WeakRef' // TODO
+				&& expected !== 'FinalizationRegistry' // TODO
+			) {
+				if (hasToStringTag) {
+					var fakerTag = {};
+					fakerTag[Symbol.toStringTag] = expected;
+					t.equal(
+						which(fakerTag),
+						'Object',
+						inspect(fakerTag) + ' lies and claims it is a ' + expected + ', but instead it is Object'
+					);
+				}
+
+				var fakerConstructor = { constructor: global[expected] };
+				t.equal(
+					which(fakerConstructor),
+					'Object',
+					inspect(fakerConstructor) + ' lies and claims it is a ' + expected + ', but instead it is Object'
+				);
+
+				if (hasToStringTag) {
+					var fakerConstructorTag = { constructor: global[expected] };
+					fakerConstructorTag[Symbol.toStringTag] = expected;
+					t.equal(
+						which(fakerConstructorTag),
+						'Object',
+						inspect(fakerConstructorTag) + ' lies with a tag and claims it is a ' + expected + ', but instead it is Object'
+					);
+				}
 			}
 		});
 	});
