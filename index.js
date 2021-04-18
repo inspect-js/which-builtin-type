@@ -6,6 +6,8 @@ var whichTypedArray = require('which-typed-array');
 var isArray = require('isarray');
 var isDate = require('is-date-object');
 var isRegex = require('is-regex');
+var isWeakRef = require('is-weakref');
+var isFinalizationRegistry = require('is-finalizationregistry');
 var name = require('function.prototype.name');
 var isGeneratorFunction = require('is-generator-function');
 var isAsyncFunction = require('is-async-fn');
@@ -47,10 +49,12 @@ var isKnownBuiltin = function isKnownBuiltinName(builtinName) {
 		&& builtinName !== 'Uint8Array'
 		&& builtinName !== 'Uint8ClampedArray'
 
-		// checked explicitly above
+		// checked explicitly
 		&& builtinName !== 'Array'
 		&& builtinName !== 'Date'
+		&& builtinName !== 'FinalizationRegistry'
 		&& builtinName !== 'RegExp'
+		&& builtinName !== 'WeakRef'
 		// functions
 		&& builtinName !== 'Function'
 		&& builtinName !== 'GeneratorFunction'
@@ -74,6 +78,12 @@ module.exports = function whichBuiltinType(value) {
 	}
 	if (isRegex(value)) {
 		return 'RegExp';
+	}
+	if (isWeakRef(value)) {
+		return 'WeakRef';
+	}
+	if (isFinalizationRegistry(value)) {
+		return 'FinalizationRegistry';
 	}
 	if (typeof value === 'function') {
 		if (isGeneratorFunction(value)) {
