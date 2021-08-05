@@ -8,7 +8,7 @@ var arrows = require('make-arrow-function').list();
 var generators = require('make-generator-function')();
 var asyncs = require('make-async-function').list();
 var hasSymbols = require('has-symbols')();
-var hasToStringTag = hasSymbols && typeof Symbol.toStringTag === 'symbol';
+var hasToStringTag = require('has-tostringtag/shams')();
 var hasBigInts = require('has-bigints')();
 var availableTypedArrays = require('available-typed-arrays');
 

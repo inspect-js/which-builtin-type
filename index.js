@@ -11,8 +11,8 @@ var isFinalizationRegistry = require('is-finalizationregistry');
 var name = require('function.prototype.name');
 var isGeneratorFunction = require('is-generator-function');
 var isAsyncFunction = require('is-async-fn');
-var hasSymbols = require('has-symbols')();
-var toStringTag = hasSymbols && Symbol.toStringTag;
+var hasToStringTag = require('has-tostringtag/shams')();
+var toStringTag = hasToStringTag && Symbol.toStringTag;
 
 var $Object = Object;
 

@@ -76,6 +76,7 @@
 	},
 	"dependencies": {
 		"function.prototype.name": "^1.1.4",
+		"has-tostringtag": "^1.0.0",
 		"is-async-fn": "^1.1.0",
 		"is-date-object": "^1.0.2",
 		"is-finalizationregistry": "^1.0.1",
