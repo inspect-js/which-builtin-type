@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.1](https://github.com/inspect-js/which-builtin-type/compare/v1.1.0...v1.1.1) - 2021-08-06
+
+### Commits
+
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `available-typed-arrays`, `object-inspect`, `tape` [`8adae7d`](https://github.com/inspect-js/which-builtin-type/commit/8adae7d7ba4a49309f87e990d9787589f8c978a1)
+- [Deps] update `is-date-object`, `is-generator-function`, `is-regex`, `which-typed-array` [`805b158`](https://github.com/inspect-js/which-builtin-type/commit/805b158f86d258983868b45ceb4a3a9417fed08e)
+- [Refactor] use `has-tostringtag` to behave correctly in the presence of symbol shams [`9ec250a`](https://github.com/inspect-js/which-builtin-type/commit/9ec250a652c6607053d63c3e662547cf36c8cb9b)
+- [readme] add github actions/codecov badges [`75b51b4`](https://github.com/inspect-js/which-builtin-type/commit/75b51b4c96280a05014c97efba6b8291b18af5cb)
+
 ## [v1.1.0](https://github.com/inspect-js/which-builtin-type/compare/v1.0.1...v1.1.0) - 2021-04-18
 
 ### Commits
