@@ -78,14 +78,14 @@
 		"function.prototype.name": "^1.1.4",
 		"has-tostringtag": "^1.0.0",
 		"is-async-fn": "^1.1.0",
-		"is-date-object": "^1.0.2",
+		"is-date-object": "^1.0.5",
 		"is-finalizationregistry": "^1.0.1",
-		"is-generator-function": "^1.0.8",
-		"is-regex": "^1.1.2",
+		"is-generator-function": "^1.0.10",
+		"is-regex": "^1.1.4",
 		"is-weakref": "^1.0.1",
 		"isarray": "^2.0.5",
 		"which-boxed-primitive": "^1.0.2",
 		"which-collection": "^1.0.1",
-		"which-typed-array": "^1.1.4"
+		"which-typed-array": "^1.1.5"
 	}
 }
