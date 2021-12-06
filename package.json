@@ -48,11 +48,11 @@
 		"node": ">= 0.4"
 	},
 	"devDependencies": {
-		"@ljharb/eslint-config": "^17.6.0",
+		"@ljharb/eslint-config": "^19.1.0",
 		"aud": "^1.1.5",
 		"auto-changelog": "^2.3.0",
-		"available-typed-arrays": "^1.0.4",
-		"eslint": "^7.32.0",
+		"available-typed-arrays": "^1.0.5",
+		"eslint": "^8.4.0",
 		"evalmd": "^0.0.19",
 		"for-each": "^0.3.3",
 		"has-bigints": "^1.0.1",
@@ -63,8 +63,8 @@
 		"nyc": "^10.3.2",
 		"object-inspect": "^1.11.0",
 		"object.assign": "^4.1.2",
-		"safe-publish-latest": "^1.1.4",
-		"tape": "^5.3.0"
+		"safe-publish-latest": "^2.0.0",
+		"tape": "^5.3.2"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
