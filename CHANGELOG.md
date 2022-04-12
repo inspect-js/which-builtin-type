@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.2](https://github.com/inspect-js/which-builtin-type/compare/v1.1.1...v1.1.2) - 2022-04-12
+
+### Commits
+
+- [actions] reuse common workflows [`b1b60aa`](https://github.com/inspect-js/which-builtin-type/commit/b1b60aa01b20f613a97b456c3062412f0aba67dd)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `safe-publish-latest`, `tape` [`8115a20`](https://github.com/inspect-js/which-builtin-type/commit/8115a20941ca702c1a927a0aea08ffa0b37821c0)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `object-inspect`, `tape` [`86b3c3b`](https://github.com/inspect-js/which-builtin-type/commit/86b3c3ba155a2a292a69d507be85ede12896163d)
+- [actions] update codecov uploader [`de30f4b`](https://github.com/inspect-js/which-builtin-type/commit/de30f4bdd613b36a11270085974013c1e0025b74)
+- [Deps] update `function.prototype.name`, `is-finalizationregistry`, `which-typed-array` [`0ba20f5`](https://github.com/inspect-js/which-builtin-type/commit/0ba20f53824455b2fcdd90027a64bc34f09bec6b)
+- [Refactor] use `is-async-function` [`6f36d89`](https://github.com/inspect-js/which-builtin-type/commit/6f36d8942a158cc41f486ba9e29d08f75a6d1406)
+- [Deps] update `is-weakref` [`d775476`](https://github.com/inspect-js/which-builtin-type/commit/d775476f5f0dccab56b13c839ce6ada377b67ca0)
+
 ## [v1.1.1](https://github.com/inspect-js/which-builtin-type/compare/v1.1.0...v1.1.1) - 2021-08-06
 
 ### Commits
