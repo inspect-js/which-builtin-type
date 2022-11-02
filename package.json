@@ -83,7 +83,7 @@
 		"isarray": "^2.0.5",
 		"which-boxed-primitive": "^1.0.2",
 		"which-collection": "^1.0.1",
-		"which-typed-array": "^1.1.7"
+		"which-typed-array": "^1.1.9"
 	},
 	"publishConfig": {
 		"ignore": [
