@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.3](https://github.com/inspect-js/which-builtin-type/compare/v1.1.2...v1.1.3) - 2022-11-02
+
+### Commits
+
+- [meta] use `npmignore` to autogenerate an npmignore file [`0ccf168`](https://github.com/inspect-js/which-builtin-type/commit/0ccf168604ddaab1d40de8fde5140f5dca942c5b)
+- [Dev Deps] update `aud`, `has-bigints`, `has-symbols`, `in-publish`, `object-inspect`, `object.assign`, `tape` [`2c87b2e`](https://github.com/inspect-js/which-builtin-type/commit/2c87b2ed58c397a26953dbe2cb2aae452e32ee21)
+- [actions] update rebase action to use reusable workflow [`ab27caf`](https://github.com/inspect-js/which-builtin-type/commit/ab27caf0d6cd1fccc5738fda4cebee7bf47eca14)
+- [meta] simplify `exports` [`680d056`](https://github.com/inspect-js/which-builtin-type/commit/680d05674f979c1a02ae7c6b9f885114e962324e)
+- [Deps] update `which-typed-array` [`3ca0216`](https://github.com/inspect-js/which-builtin-type/commit/3ca02166585c6e7350fe0bc7518fccce269fc5ac)
+- [meta] add `sideEffects` flag [`caa2221`](https://github.com/inspect-js/which-builtin-type/commit/caa22214c751674f1959944a0ece81b032141e3b)
+
 ## [v1.1.2](https://github.com/inspect-js/which-builtin-type/compare/v1.1.1...v1.1.2) - 2022-04-12
 
 ### Commits
