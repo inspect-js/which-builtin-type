@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.4](https://github.com/inspect-js/which-builtin-type/compare/v1.1.3...v1.1.4) - 2024-07-29
+
+### Commits
+
+- [readme] fix URLs [`f26fc22`](https://github.com/inspect-js/which-builtin-type/commit/f26fc2243220277874e36ace85f48f87ec8ab502)
+- [Dev Deps] update `@ljharb/eslint-config`, `aud`, `available-typed-arrays`, `npmignore`, `object-inspect`, `object.assign`, `tape` [`f724135`](https://github.com/inspect-js/which-builtin-type/commit/f724135d44efd74ee067102c8c499566d73b849c)
+- [Deps] update `function.prototype.name`, `has-tostringtag`, `which-collection`, `which-typed-array` [`831119b`](https://github.com/inspect-js/which-builtin-type/commit/831119b76ce79004c368deab141e8a9bd680950c)
+
 ## [v1.1.3](https://github.com/inspect-js/which-builtin-type/compare/v1.1.2...v1.1.3) - 2022-11-02
 
 ### Commits
