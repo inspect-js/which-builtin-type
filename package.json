@@ -72,8 +72,8 @@
 		"hideCredit": true
 	},
 	"dependencies": {
-		"function.prototype.name": "^1.1.5",
-		"has-tostringtag": "^1.0.0",
+		"function.prototype.name": "^1.1.6",
+		"has-tostringtag": "^1.0.2",
 		"is-async-function": "^2.0.0",
 		"is-date-object": "^1.0.5",
 		"is-finalizationregistry": "^1.0.2",
@@ -82,8 +82,8 @@
 		"is-weakref": "^1.0.2",
 		"isarray": "^2.0.5",
 		"which-boxed-primitive": "^1.0.2",
-		"which-collection": "^1.0.1",
-		"which-typed-array": "^1.1.9"
+		"which-collection": "^1.0.2",
+		"which-typed-array": "^1.1.15"
 	},
 	"publishConfig": {
 		"ignore": [
