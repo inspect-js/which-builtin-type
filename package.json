@@ -77,7 +77,7 @@
 		"has-tostringtag": "^1.0.2",
 		"is-async-function": "^2.0.0",
 		"is-date-object": "^1.0.5",
-		"is-finalizationregistry": "^1.0.2",
+		"is-finalizationregistry": "^1.1.0",
 		"is-generator-function": "^1.0.10",
 		"is-regex": "^1.1.4",
 		"is-weakref": "^1.0.2",
