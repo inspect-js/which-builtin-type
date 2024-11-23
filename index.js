@@ -11,18 +11,19 @@ var isFinalizationRegistry = require('is-finalizationregistry');
 var name = require('function.prototype.name');
 var isGeneratorFunction = require('is-generator-function');
 var isAsyncFunction = require('is-async-function');
+var callBound = require('call-bind/callBound');
 var hasToStringTag = require('has-tostringtag/shams')();
 var toStringTag = hasToStringTag && Symbol.toStringTag;
 
 var $Object = Object;
 
-var promiseThen = typeof Promise === 'function' && Promise.prototype.then;
+var promiseThen = callBound('Promise.prototype.then', true);
 var isPromise = function isPromise(value) {
 	if (!value || typeof value !== 'object' || !promiseThen) {
 		return false;
 	}
 	try {
-		promiseThen.call(value, null, function () {});
+		promiseThen(value, null, function () {});
 		return true;
 	} catch (e) {}
 	return false;

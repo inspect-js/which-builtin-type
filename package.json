@@ -72,6 +72,7 @@
 		"hideCredit": true
 	},
 	"dependencies": {
+		"call-bind": "^1.0.7",
 		"function.prototype.name": "^1.1.6",
 		"has-tostringtag": "^1.0.2",
 		"is-async-function": "^2.0.0",
