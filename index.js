@@ -17,7 +17,9 @@ var toStringTag = hasToStringTag && Symbol.toStringTag;
 
 var $Object = Object;
 
+/** @type {undefined | ((value: ThisParameterType<typeof Promise.prototype.then>, ...args: Parameters<typeof Promise.prototype.then>) => ReturnType<typeof Promise.prototype.then>)} */
 var promiseThen = callBound('Promise.prototype.then', true);
+/** @type {<T = unknown>(value: unknown) => value is Promise<T>} */
 var isPromise = function isPromise(value) {
 	if (!value || typeof value !== 'object' || !promiseThen) {
 		return false;
@@ -29,8 +31,9 @@ var isPromise = function isPromise(value) {
 	return false;
 };
 
+/** @type {(builtinName: unknown) => boolean} */
 var isKnownBuiltin = function isKnownBuiltin(builtinName) {
-	return builtinName
+	return !!builtinName
 		// primitives
 		&& builtinName !== 'BigInt'
 		&& builtinName !== 'Boolean'
@@ -74,6 +77,7 @@ var isKnownBuiltin = function isKnownBuiltin(builtinName) {
 		&& builtinName !== 'AsyncFunction';
 };
 
+/** @type {import('.')} */
 module.exports = function whichBuiltinType(value) {
 	if (value == null) {
 		return value;
@@ -110,6 +114,7 @@ module.exports = function whichBuiltinType(value) {
 	if (isPromise(value)) {
 		return 'Promise';
 	}
+	// @ts-expect-error TS can't figure out that `value` is an `object` after the `which` check above
 	if (toStringTag && toStringTag in value) {
 		var tag = value[toStringTag];
 		if (isKnownBuiltin(tag)) {
@@ -117,7 +122,8 @@ module.exports = function whichBuiltinType(value) {
 		}
 	}
 	if (typeof value.constructor === 'function') {
-		var constructorName = name(value.constructor);
+		// eslint-disable-next-line no-extra-parens
+		var constructorName = name(/** @type {Parameters<name>[0]} */ (value.constructor));
 		if (isKnownBuiltin(constructorName)) {
 			return constructorName;
 		}
