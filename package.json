@@ -55,7 +55,6 @@
 		"@types/is-async-function": "^2.0.3",
 		"@types/is-date-object": "^1.0.4",
 		"@types/is-generator-function": "^1.0.3",
-		"@types/is-regex": "^1.0.2",
 		"@types/is-weakref": "^1.0.0",
 		"@types/make-arrow-function": "^1.2.2",
 		"@types/make-async-function": "^1.0.2",
@@ -99,12 +98,12 @@
 		"is-date-object": "^1.0.5",
 		"is-finalizationregistry": "^1.1.0",
 		"is-generator-function": "^1.0.10",
-		"is-regex": "^1.1.4",
+		"is-regex": "^1.2.0",
 		"is-weakref": "^1.0.2",
 		"isarray": "^2.0.5",
 		"which-boxed-primitive": "^1.0.2",
 		"which-collection": "^1.0.2",
-		"which-typed-array": "^1.1.15"
+		"which-typed-array": "^1.1.16"
 	},
 	"publishConfig": {
 		"ignore": [
