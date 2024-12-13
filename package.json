@@ -48,7 +48,6 @@
 		"@arethetypeswrong/cli": "^0.17.1",
 		"@ljharb/eslint-config": "^21.1.1",
 		"@ljharb/tsconfig": "^0.2.2",
-		"@types/call-bind": "^1.0.5",
 		"@types/for-each": "^0.3.3",
 		"@types/function.prototype.name": "^1.1.4",
 		"@types/is-async-function": "^2.0.3",
@@ -90,7 +89,7 @@
 		"hideCredit": true
 	},
 	"dependencies": {
-		"call-bind": "^1.0.8",
+		"call-bound": "^1.0.2",
 		"function.prototype.name": "^1.1.6",
 		"has-tostringtag": "^1.0.2",
 		"is-async-function": "^2.0.0",
