@@ -41,8 +41,20 @@
 		"url": "https://github.com/inspect-js/which-builtin-type/issues"
 	},
 	"homepage": "https://github.com/inspect-js/which-builtin-type#readme",
-	"engines": {
-		"node": ">= 0.4"
+	"dependencies": {
+		"call-bound": "^1.0.2",
+		"function.prototype.name": "^1.1.6",
+		"has-tostringtag": "^1.0.2",
+		"is-async-function": "^2.0.0",
+		"is-date-object": "^1.1.0",
+		"is-finalizationregistry": "^1.1.0",
+		"is-generator-function": "^1.0.10",
+		"is-regex": "^1.2.1",
+		"is-weakref": "^1.0.2",
+		"isarray": "^2.0.5",
+		"which-boxed-primitive": "^1.1.0",
+		"which-collection": "^1.0.2",
+		"which-typed-array": "^1.1.16"
 	},
 	"devDependencies": {
 		"@arethetypeswrong/cli": "^0.17.1",
@@ -80,6 +92,9 @@
 		"tape": "^5.9.0",
 		"typescript": "next"
 	},
+	"engines": {
+		"node": ">= 0.4"
+	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
 		"template": "keepachangelog",
@@ -87,21 +102,6 @@
 		"commitLimit": false,
 		"backfillLimit": false,
 		"hideCredit": true
-	},
-	"dependencies": {
-		"call-bound": "^1.0.2",
-		"function.prototype.name": "^1.1.6",
-		"has-tostringtag": "^1.0.2",
-		"is-async-function": "^2.0.0",
-		"is-date-object": "^1.1.0",
-		"is-finalizationregistry": "^1.1.0",
-		"is-generator-function": "^1.0.10",
-		"is-regex": "^1.2.1",
-		"is-weakref": "^1.0.2",
-		"isarray": "^2.0.5",
-		"which-boxed-primitive": "^1.1.0",
-		"which-collection": "^1.0.2",
-		"which-typed-array": "^1.1.16"
 	},
 	"publishConfig": {
 		"ignore": [
