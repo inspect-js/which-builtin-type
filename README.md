@@ -63,5 +63,5 @@ Simply clone the repo, `npm install`, and run `npm test`
 [downloads-url]: https://npm-stat.com/charts.html?package=which-builtin-type
 [codecov-image]: https://codecov.io/gh/inspect-js/which-builtin-type/branch/main/graphs/badge.svg
 [codecov-url]: https://app.codecov.io/gh/inspect-js/which-builtin-type/
-[actions-image]: https://img.shields.io/endpoint?url=https://github-actions-badge-u3jn4tfpocch.runkit.sh/inspect-js/which-builtin-type
+[actions-image]: https://img.shields.io/github/check-runs/inspect-js/which-builtin-type/main
 [actions-url]: https://github.com/inspect-js/which-builtin-type/actions
