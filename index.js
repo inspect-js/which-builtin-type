@@ -55,6 +55,7 @@ var isKnownBuiltin = function isKnownBuiltin(builtinName) {
 		// typed arrays
 		&& builtinName !== 'BigInt64Array'
 		&& builtinName !== 'BigUint64Array'
+		&& builtinName !== 'Float16Array'
 		&& builtinName !== 'Float32Array'
 		&& builtinName !== 'Float64Array'
 		&& builtinName !== 'Int16Array'
