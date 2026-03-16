@@ -64,6 +64,7 @@
 		"@types/function.prototype.name": "^1.1.4",
 		"@types/make-arrow-function": "^1.2.2",
 		"@types/make-async-function": "^1.0.2",
+		"@types/node": "^25.5.0",
 		"@types/object-inspect": "^1.13.0",
 		"@types/object.assign": "^4.1.0",
 		"@types/tape": "^5.8.1",

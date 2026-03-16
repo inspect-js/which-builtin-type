@@ -17,7 +17,6 @@ var toStringTag = hasToStringTag && Symbol.toStringTag;
 
 var $Object = Object;
 
-/** @type {undefined | ((value: ThisParameterType<typeof Promise.prototype.then>, ...args: Parameters<typeof Promise.prototype.then>) => ReturnType<typeof Promise.prototype.then>)} */
 var promiseThen = callBound('Promise.prototype.then', true);
 /** @type {<T = unknown>(value: unknown) => value is Promise<T>} */
 var isPromise = function isPromise(value) {
@@ -25,6 +24,7 @@ var isPromise = function isPromise(value) {
 		return false;
 	}
 	try {
+		// @ts-expect-error non-promises will throw
 		promiseThen(value, null, function () {});
 		return true;
 	} catch (e) {}

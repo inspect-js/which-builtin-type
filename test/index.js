@@ -181,6 +181,7 @@ test('non-nullish', function (t) {
 	});
 
 	if (hasToStringTag) {
+		/** @type {{ [Symbol.toStringTag]?: string }} */
 		var customTagObj = {};
 		customTagObj[Symbol.toStringTag] = 'CustomType';
 		t.equal(which(customTagObj), 'CustomType', 'object with custom non-builtin toStringTag returns the tag');
