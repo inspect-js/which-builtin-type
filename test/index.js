@@ -180,5 +180,11 @@ test('non-nullish', function (t) {
 		});
 	});
 
+	if (hasToStringTag) {
+		var customTagObj = {};
+		customTagObj[Symbol.toStringTag] = 'CustomType';
+		t.equal(which(customTagObj), 'CustomType', 'object with custom non-builtin toStringTag returns the tag');
+	}
+
 	t.end();
 });
